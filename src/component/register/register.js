@@ -26,7 +26,7 @@ function  Register(){
         const { name, email, password, reEnterPassword} = user
       if( name && email && password && (password === reEnterPassword)){
         
-        axios.post('https://git.heroku.com/iyasback.git/register',user)
+        axios.post('https://ilyasqwe.herokuapp.com/register',user)
        .then( res => alert(res.data.message),
        history.push("/login")
        )
