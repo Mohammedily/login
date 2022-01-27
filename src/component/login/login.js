@@ -22,7 +22,7 @@ function Login({setLoginUser}){
     }
     
     const login = () => {
-        axios.post("hhttps://ilyasqwe.herokuapp.com/login",user)
+        axios.post("https://ilyasqwe.herokuapp.com/login",user)
         .then(res => {alert(res.data.message)
            setLoginUser(res.data.user)
            history.push("/")
