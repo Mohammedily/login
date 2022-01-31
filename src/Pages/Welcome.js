@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 // import jwt from 'jsonwebtoken'
-import { useHistory } from 'react-router-dom/cjs/react-router-dom.min'
+// import { useHistory } from 'react-router-dom/cjs/react-router-dom.min'
 import "./Welcome.css";
 
 
@@ -8,7 +8,7 @@ import "./Welcome.css";
 
 
 const Welcome = () => {
-	const history = useHistory()
+	// const history = useHistory()
 
 	// const [user, setUser] = useState('User')
 
