@@ -1,35 +1,21 @@
-import "./App.css";
-import Home from "./component/home/home";
-import Login from "./component/login/login";
-import Register from "./component/register/register";
-import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
-import { useState } from 'react';
-
-function App() {
-
-    const [user, setLoginUser] = useState({ })
-
-  return (
-    <div className="App">
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            {
-              user && user._id ? <Home setLoginUser={setLoginUser}/> : <Login setLoginUser={setLoginUser} />
-            }
-          </Route>
-          <Route path="/login">
-            <Login  setLoginUser={setLoginUser}/>
-          </Route>
-          <Route path="/register">
-            <Register />
-            </Route>
-        </Switch>
-      </Router>
-
-     
-    </div>
-  );
+import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import {  Welcome, MentorData, StudentData, Mentor, Student } from './Pages'
+const App = () => {
+    return (
+        <div className="App">
+            <Router>
+                 {/* <Route exact path="/login"  component={Login}/>
+                <Route path="/register"  component={Register}/> */}
+                <Route  path="/welcome" component={Welcome}/> 
+                <Route  path="/mentor" component={MentorData}/> 
+                <Route  path="/student" component={StudentData}/> 
+                <Route  path="/mentordata" component={Mentor}/> 
+                <Route  path="/studentdata" component={Student}/> 
+            </Router>
+          
+        </div>
+    )
 }
 
-export default App;
+export default App

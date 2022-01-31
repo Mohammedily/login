@@ -1,0 +1,7 @@
+// export { default as Login } from './Login'
+// export { default as Register } from './Register'
+export { default as Welcome} from './Welcome'
+export { default as MentorData} from './mentor'
+export { default as StudentData} from './student'
+export { default as Mentor} from './mentordata'
+export { default as Student} from './studentdata'
